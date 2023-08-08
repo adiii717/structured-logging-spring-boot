@@ -65,3 +65,11 @@ This should log the following structured JSON logs to the console, containing th
 }
 
 ```
+
+### Docker Build:
+
+```
+docker build -t structured-logging-demo .
+
+docker run -it structured-logging-demo
+```
