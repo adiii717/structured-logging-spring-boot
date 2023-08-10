@@ -23,7 +23,7 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copy the compiled application from the build image
-COPY --from=build /app/target/structured-logging-demo.jar /app/
+COPY --from=build /app/target/structured-logging-demo-*.jar /app/structured-logging-demo.jar
 
 # Define the command to run the application
 CMD ["java", "-jar", "structured-logging-demo.jar"]
